@@ -1,0 +1,20 @@
+<html>
+    <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda - Detalhes</title>
+</head>
+<body>
+    <h1> Agenda - Detalhes</h1>
+        <!--Criei um html para ler as informacoes , os detalhes do contato, e um novo GetMappping para
+             ler estes dados no Contorller-->
+    <h2 th:text="${contato.nome}"></h2>
+    <h3 th:text="${contato.tipo}"></h3>
+    <h3 th:text="${contato.telefone}"></h3>
+    <h3 th:text="${contato.city}"></h3>
+
+    <a href="/">Voltar</a>
+</body>
+</html>

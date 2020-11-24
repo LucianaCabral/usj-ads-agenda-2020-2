@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda-Cadastro</title>
+</head>
+<body>
+  <h1>Cadastro</h1> 
+  
+<form Method="POST" action="/adicionar">
+<div>
+        <label for="nome">Nome:</label>
+        <!--<input type="text" name="nome" id="nome" />-->
+        <input type="text" name="nome" id="nome" th:value="${contato.nome}" />
+</div>
+<div>
+        <label for="tipo">Tipo:</label>
+        <!--<input type="text" name="tipo" id="tipo"/>-->
+        <input type="text" name="tipo" id="tipo" th:value="${contato.tipo}" />
+</div>
+<div>
+        <label for="telefone">Telefone</label>
+        <!--<input type="text" name="telefone" id="telefone" /-->
+        <input type="text" name="telefone" id="telefone" th:value="${contato.telefone}" />
+</div>
+<div>
+    <label for="city">City:</label>
+    <!--<input type="text" name="city" id="city"/>-->
+    <input type="text" name="city" id="city" th:value= "${contato.city}" />
+</div>
+<div>
+    <input type="hidden" name="id" id="id" th:value="${contato.id}"/>
+    <input type ="submit"/>
+ </div>
+    </form>
+
+    <a href="/">Voltar</a>
+</body>
+</html>
